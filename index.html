@@ -11,24 +11,34 @@
     <main>
         <section class="container">
             <div class="uppercontent">
-                <h4>Password Generator</h4>
-                <input type="text" id="password" placeholder="PASSWORD">
+                <h3>Password Generator</h3>
+                <div class="password-container">
+                    <span id="result-password">
+                    </span>
+                </div>
             </div>
             <div class="lowercontent">
-                <div class="strength">
-                    <p>STRENGTH</p>
-                    <div class="bar">
-                        <span class="strengthbar">1</span>
-                        <span class="strengthbar">1</span>
-                        <span class="strengthbar">1</span>
-                        <span class="strengthbar">1</span>
+                <div class="characterlength">
+                    <input type="range" name="" id="characteramountrange" min="1" max="10">
+                    <div class="characteramountnum">
+                        <input type="number" name="" id="number" value="0" min="1" max="10">
                     </div>
-                    
                 </div>
-                <button class="button">GENERATE</button>
+                <div class="checkboxes">
+                    <input type="checkbox" id="uppercase" name="uppercasecase" value="">
+                    <label for="includingUppercase">include Uppercase</label><br>
+                    <input type="checkbox" id="lowercase" name="lowercase" value="">
+                    <label for="includingLowercase"> include lowercase</label><br>
+                    <input type="checkbox" id="numbers" name="numbers" value="">
+                    <label for="includingNumbers"> include number</label><br>
+                    <input type="checkbox" id="symbols" name="symbols" value="">
+                    <label for="symbols">include Symbols</label><br>
+                </div>
+                <button class="button" id="generate">GENERATE</button>
 
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

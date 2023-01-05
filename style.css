@@ -68,7 +68,7 @@
     min-height: 400px;
     display: grid;
     place-content: center;
-    gap: 1rem;
+    gap: 1.3rem;
     padding: 1rem;
   }
   .uppercontent{
@@ -76,39 +76,23 @@
     place-items: center;
     gap: 0.5em;
   }
-  #password{
+  
+  #result-password{
     font-size: .92rem;
-
-    border: 0;
+    border: 1px solid var(--clr-password);
     color: var(--clr-password);
     background-color:var(--clr-content-bg);
-    padding: .8rem 4rem;
-  }
-  #password:focus::placeholder{
-    color: transparent;
-
-  }
-  #password::after::placeholder{
-    content: "";
-    background-image: url(images/right-arrow.png);
-    width: 15px;
-    height: 16px;
+    padding: .8rem 10rem;
   }
  
   .lowercontent{
     display: grid;
+    border: 1px solid var(--clr-password);
     gap: 2rem;
     background-color: var(--clr-content-bg);
     padding: 1em;
   }
-  .strength{
-    display: flex;
-    justify-content: space-between;
-    
-    padding: 1rem 3rem;
-    background-color: var(--clr-background);
-
-  }
+ 
   .button{
     display: inline-flex;
     gap: 1rem;
@@ -133,3 +117,19 @@
     width: 15px;
     height: 16px;
   }
+
+.characterlength{
+  display: flex;
+  justify-content: space-between;
+  
+}
+#number{
+  background: transparent;
+  border: 0;
+  color: var(--clr-strength-bar);
+}
+
+.checkboxes input{
+  margin-right: 1rem;
+}
+
